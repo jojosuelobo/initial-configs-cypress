@@ -9,4 +9,9 @@ describe('template spec', () => {
       cy.log(data.name)
     })
   });
+
+  it('Usando Commands', () => {
+    cy.visit('https://example.cypress.io')
+    cy.customCommand('Olá')
+  })
 })
