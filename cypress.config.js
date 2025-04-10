@@ -4,7 +4,7 @@ require('dotenv').config()
 module.exports = defineConfig({
   e2e: {
     // Define a URL base para os testes
-    baseUrl: 'https://meusite.com', 
+    baseUrl: 'https://example.cypress.io', 
 
     // Tempo padrão para comandos esperarem (ex: cy.get)
     defaultCommandTimeout: 8000, 
