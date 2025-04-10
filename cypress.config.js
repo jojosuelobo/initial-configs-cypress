@@ -1,4 +1,5 @@
 const { defineConfig } = require('cypress')
+require('dotenv').config()
 
 module.exports = defineConfig({
   e2e: {
@@ -10,8 +11,9 @@ module.exports = defineConfig({
 
     // Variáveis de ambiente (acessível com Cypress.env)
     env: {
-      ambiente: 'dev',
-      token: 'abc123'
+      // ambiente: 'dev',
+      // token: 'abc123'
+      ...process.env
     }, 
 
     // Intervalo entre digitação de cada caractere no cy.type()
